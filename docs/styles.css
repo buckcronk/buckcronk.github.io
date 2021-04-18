@@ -34,14 +34,24 @@
 
 /* Content */
 
-.content-area {
-    margin: 0 10rem 0 10rem;
-    padding: 3rem;
-    background-color: rgba(255, 255, 255, 0.5);
+html {
+    height: 100vh;
 }
 
 body {
     margin: 0;
+    padding: 3vh;
+    height: 94vh;
+}
+
+@media(min-width: 64rem) {
+    body {
+        padding: 5vh 20vw;
+        height: 90vh;
+    }
+}
+
+body {
     background-image: url("home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,9 +60,14 @@ body {
     background-color: #111;
 }
 
+.content-area {
+    padding: 2vh;
+    background-color: rgba(17, 17, 17, 0.5);
+}
+
 h1 {
     margin: 0;
-    color: #fff;
+    color: rgb(245, 245, 245);
     font-family: "anonymous-pro-bold";
     font-size: 2rem;
     font-weight: bold;
@@ -60,10 +75,23 @@ h1 {
 
 p {
     margin: 0;
-    color: #fff;
+    color: rgb(245, 245, 245);
     font-family: "anonymous-pro-regular";
 }
 
 a {
     color: skyblue;
+    font-family: "anonymous-pro-regular";
+}
+
+hr {
+    border: 0.1rem solid rgb(245, 245, 245);
+}
+
+hr.top {
+    margin: 0.5rem 0 1rem 0;
+}
+
+hr.bottom {
+    margin: 3rem 0 0.5rem 0;
 }
