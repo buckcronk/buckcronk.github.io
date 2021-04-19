@@ -55,7 +55,7 @@ body {
 
 .content-area {
     padding: 2vh;
-    background-color: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, 0.65);
 }
 
 h1 {
@@ -73,10 +73,6 @@ p {
     font-size: 4rem;
 }
 
-.footer-text {
-    font-size: 3rem;
-}
-
 a {
     color: skyblue;
     font-family: "anonymous-pro-regular";
@@ -87,27 +83,44 @@ hr {
     margin: 3rem 0;
 }
 
-hr.footer-hr {
-    margin-bottom: 4rem;
-}
-
 .social-links-list {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .social-link-item {
     color: rgb(245, 245, 245);
+    flex: 1 1 0px;
+}
+
+.social-link-item:hover {
+    background-color: rgba(17, 17, 17, 0.5);
+}
+
+.social-link-item a {
+    text-decoration: none;
+}
+
+.social-link-button {    
     display: flex;
 }
 
-.social-link-item svg {
-    height: 7rem;
+.social-link-button svg {
+    height: 8rem;
     margin: 1rem;
 }
 
-.social-link-item p {
+.social-link-button p {
     margin: auto 2rem;
+}
+
+hr.footer-hr {
+    margin-bottom: 4rem;
+}
+
+.footer-text {
+    font-size: 3rem;
 }
 
 @media(min-width: 64rem) {
@@ -117,10 +130,14 @@ hr.footer-hr {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     p {
         font-size: 1.5rem;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
     }
 }
