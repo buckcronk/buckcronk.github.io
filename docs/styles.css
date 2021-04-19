@@ -44,13 +44,6 @@ body {
     height: 94vh;
 }
 
-@media(min-width: 64rem) {
-    body {
-        padding: 5vh 20vw;
-        height: 90vh;
-    }
-}
-
 body {
     background-image: url("home.jpg");
     background-repeat: no-repeat;
@@ -69,7 +62,7 @@ h1 {
     margin: 0;
     color: rgb(245, 245, 245);
     font-family: "anonymous-pro-bold";
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -77,6 +70,11 @@ p {
     margin: 0;
     color: rgb(245, 245, 245);
     font-family: "anonymous-pro-regular";
+    font-size: 2rem;
+}
+
+.footer-text {
+    font-size: 1.2rem;
 }
 
 a {
@@ -86,14 +84,11 @@ a {
 
 hr {
     border: 0.1rem solid rgb(245, 245, 245);
+    margin: 1rem 0;
 }
 
-hr.top {
-    margin: 0.5rem 0 1rem 0;
-}
-
-hr.bottom {
-    margin: 3rem 0 0.5rem 0;
+hr.footer-hr {
+    margin-bottom: 4rem;
 }
 
 .social-links-list {
@@ -105,5 +100,21 @@ hr.bottom {
 }
 
 .social-link-item svg {
-    height: 5vh;
+    height: 3rem;
+    margin: 0.4rem;
+}
+
+@media(min-width: 64rem) {
+    body {
+        padding: 5vh 20vw;
+        height: 90vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
