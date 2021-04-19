@@ -2,32 +2,32 @@
 
 @font-face {
     font-family: "anonymous-pro-regular";
-    src: url("fonts/anonymous_pro-webfont.woff2") format("woff2"),
-         url("fonts/anonymous_pro-webfont.woff") format("woff");
+    src: url("assets/fonts/anonymous_pro-webfont.woff2") format("woff2"),
+         url("assets/fonts/anonymous_pro-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "anonymous-pro-bold";
-    src: url("fonts/anonymous_pro_b-webfont.woff2") format("woff2"),
-         url("fonts/anonymous_pro_b-webfont.woff") format("woff");
+    src: url("assets/fonts/anonymous_pro_b-webfont.woff2") format("woff2"),
+         url("assets/fonts/anonymous_pro_b-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "anonymous-pro-italic";
-    src: url("fonts/anonymous_pro_i-webfont.woff2") format("woff2"),
-         url("fonts/anonymous_pro_i-webfont.woff") format("woff");
+    src: url("assets/fonts/anonymous_pro_i-webfont.woff2") format("woff2"),
+         url("assets/fonts/anonymous_pro_i-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "anonymous-pro-bold-italic";
-    src: url("fonts/anonymous_pro_bi-webfont.woff2") format("woff2"),
-         url("fonts/anonymous_pro_bi-webfont.woff") format("woff");
+    src: url("assets/fonts/anonymous_pro_bi-webfont.woff2") format("woff2"),
+         url("assets/fonts/anonymous_pro_bi-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -94,4 +94,16 @@ hr.top {
 
 hr.bottom {
     margin: 3rem 0 0.5rem 0;
+}
+
+.social-links-list {
+    display: flex;
+}
+
+.social-link-item {
+    color: rgb(245, 245, 245);
+}
+
+.social-link-item svg {
+    height: 5vh;
 }
